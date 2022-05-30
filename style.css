@@ -37,6 +37,7 @@ body {
   text-align: center;
   max-width: 60%;
   margin: 0 auto;
+  margin-bottom: 2rem;
 }
 
 .heading__first {
@@ -46,4 +47,39 @@ body {
 .heading__message {
   color: var(--neu-color-2);
   font-size: var(--fs-body);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+section {
+  background-color: var(--neu-color-3);
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+
+.supervisor {
+  border-top: 4px solid var(--prima-color-2);
+}
+
+.supervisor img {
+  display: flex;
+  align-items: flex-end;
+}
+
+.team-builder {
+  border-top: 4px solid var(--prima-color-1);
+}
+
+.karma {
+  grid-column: 2;
+  grid-row: 2;
+  border-top: 4px solid var(--prima-color-3);
+}
+
+.calculator {
+  border-top: 4px solid var(--prima-color-4);
 }
