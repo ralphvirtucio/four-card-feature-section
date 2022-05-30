@@ -33,9 +33,12 @@ body {
   background-color: var(--neu-color-3);
 }
 
+main {
+  max-width: 60%;
+}
+
 .heading {
   text-align: center;
-  max-width: 60%;
   margin: 0 auto;
   margin-bottom: 2rem;
 }
@@ -52,22 +55,27 @@ body {
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 section {
   background-color: var(--neu-color-3);
   box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 5rem;
+}
+
+section img {
+  max-width: 12%;
+  align-self: flex-end;
 }
 
 .supervisor {
   border-top: 4px solid var(--prima-color-2);
-}
-
-.supervisor img {
-  display: flex;
-  align-items: flex-end;
+  transform: translateY(5rem);
 }
 
 .team-builder {
@@ -82,4 +90,33 @@ section {
 
 .calculator {
   border-top: 4px solid var(--prima-color-4);
+  transform: translateY(5rem);
+}
+
+@media (max-width: 50rem) {
+  main {
+    display: grid;
+    gap: 3rem;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+  }
+  section img {
+    max-width: 100%;
+    align-self: flex-end;
+  }
+
+  .karma {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .supervisor {
+    transform: translateY(0);
+  }
+
+  .calculator {
+    transform: translateY(0);
+  }
 }
