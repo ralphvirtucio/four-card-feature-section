@@ -37,3 +37,7 @@ Users should be able to:
 
 - Frontend Mentor - [@ralphvirtucio](https://www.frontendmentor.io/profile/ralphvirtucio)
 - Twitter - [@frontendralph](https://twitter.com/frontendralph)
+
+## Acknowledgments
+
+I acknowledge Danilo Blas for his feedback to my project his feedback helped to improved my design.
