@@ -34,13 +34,14 @@ body {
 }
 
 main {
-  max-width: 60%;
+  max-width: 65%;
 }
 
 .heading {
   text-align: center;
   margin: 0 auto;
   margin-bottom: 2rem;
+  max-width: 43%;
 }
 
 .heading__first {
@@ -69,8 +70,13 @@ section {
 }
 
 section img {
-  max-width: 12%;
+  max-width: 15%;
   align-self: flex-end;
+}
+
+section p {
+  color: var(--neu-color-2);
+  margin-top: 1rem;
 }
 
 .supervisor {
@@ -97,6 +103,7 @@ section img {
   main {
     display: grid;
     gap: 3rem;
+    margin: 2rem 0;
   }
 
   .container {
