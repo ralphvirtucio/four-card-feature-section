@@ -61,7 +61,7 @@ main {
 
 section {
   background-color: var(--neu-color-3);
-  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 5px rgb(84 158 242 / 31%);
   border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
@@ -99,16 +99,30 @@ section p {
   transform: translateY(5rem);
 }
 
-@media (max-width: 50rem) {
+@media (max-width: 52rem) {
   main {
     display: grid;
     gap: 3rem;
-    margin: 2rem 0;
+    margin: 2rem 2rem;
+    max-width: none;
+  }
+
+  header div {
+    margin-bottom: 1rem;
+  }
+
+  .heading {
+    max-width: none;
+  }
+
+  .heading h1 {
+    font-size: 1.5rem;
   }
 
   .container {
     grid-template-columns: 1fr;
   }
+
   section img {
     max-width: 100%;
     align-self: flex-end;
